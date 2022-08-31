@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Banner from './components/Banner/Banner.jsx';
+import { ThemeProvider } from './assets/context/themeProvider';
+import { CalculProvider } from './assets/context/calculProvider'
+import GlobalStyle from './assets/styles/styleGlobal';
+import Screen from './components/screen/Screen';
+import Button from './components/button/button';
+import KeyBoard from './components/keyBoard/keyBoard';
+import Calculator from './components/Calculator/Calculator';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component{
+
+  render(){
+    return (
+      <ThemeProvider>
+        <GlobalStyle />
+        <Banner />
+        <Calculator />
+      </ThemeProvider>
+    )
+  }
+
 }
-
-export default App;

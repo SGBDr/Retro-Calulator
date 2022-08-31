@@ -1,0 +1,23 @@
+.numbers{
+    display: flex;
+    justify-content: start;
+    width: 196px;
+    text-align:center;
+}
+
+
+.numbers_v{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 90px;
+    text-align:center;
+}
+
+.hot{
+    background-color: rgb(93, 85, 85);
+    width: 310px;
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+}
